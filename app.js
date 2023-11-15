@@ -76,7 +76,7 @@ const mongoose = require("mongoose");
 main().catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect("mongodb://alex:123123@localhost:27017/test");
+  await mongoose.connect("mongodb://alex:123123@127.0.0.1:27017/test");
 }
 
 const todoSchema = new mongoose.Schema({
